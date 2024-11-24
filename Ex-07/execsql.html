@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL Command Executor</title>
+</head>
+<body>
+    <h2>Execute Predefined SQL Commands</h2>
+
+    <!-- Form for creating the students table -->
+    <form action="ExecuteSQLServlet" method="post">
+        <input type="hidden" name="sqlCommand" value="CREATE TABLE IF NOT EXISTS students (reg_no VARCHAR(20) PRIMARY KEY, name VARCHAR(50), course VARCHAR(50), age INT);">
+        <input type="submit" value="Create Students Table">
+    </form>
+    <br>
+
+    <!-- Form for inserting sample data into the students table -->
+    <form action="ExecuteSQLServlet" method="post">
+        <input type="hidden" name="sqlCommand" value="INSERT INTO students (reg_no, name, course, age) VALUES ('S001', 'John Doe', 'Computer Science', 20), ('S002', 'Jane Smith', 'Mathematics', 22);">
+        <input type="submit" value="Insert Sample Data">
+    </form>
+</body>
+</html>
