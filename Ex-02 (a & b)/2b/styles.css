@@ -1,0 +1,80 @@
+body, h1, h2, ul, li {
+    margin: 3;
+    padding: 3;
+}
+
+h2{
+    color: blue;
+    text-align: right;
+}
+
+h3{
+    color: blue;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+p{
+    color: #15819F;
+}
+
+header {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(89,0,137,1) 52%, rgba(0,0,0,1) 100%);
+    color: #D8D7D7;
+    padding: 20px;
+    font-family: Constantia;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+#sidebar {
+    float: left;
+    width: 20%;
+    background-color: #A9A9A9; /* Darker gray sidebar */
+    
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 10px;
+    height: 90%;
+}
+
+#sidebar li {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#sidebar li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #4B0082; /* White text for links */
+}
+
+#sidebar li a:hover {
+    background-color: #333; /* Darken background on hover */
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  nav.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
